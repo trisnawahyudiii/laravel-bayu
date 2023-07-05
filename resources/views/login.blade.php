@@ -23,13 +23,19 @@
       >
         <div class="col-12 d-flex justify-content-center">
           <div class="wrap">
-            <form class="form">
+            <form class="form" action="/login" method="POST">
+              @csrf
               <p class="form-title">Masuk</p>
               <div class="input-container">
-                <input placeholder="Masukkan Email" type="email" id="email"/>
-              </div>
+                <input placeholder="Masukkan Email" type="email" id="email" name="email" class="@error('email') is-invalid @enderror" autofocus required value="{{old('email')}}"/>
+                @error('email')
+                    <div class="invalid-feedback">
+                        {{$message}}
+                    </div>
+                @enderror
+            </div>
               <div class="input-container">
-                <input placeholder="Masukkan Kata Sandi" type="password" id="email" />
+                <input placeholder="Masukkan Kata Sandi" type="password" id="email" name="password" required autofocus/>
               </div>
               <button class="submit" type="submit">Masuk</button>
 

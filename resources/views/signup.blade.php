@@ -23,19 +23,20 @@
       >
         <div class="col-12 d-flex justify-content-center">
           <div class="wrap">
-            <form class="form">
+            <form class="form" action="/register" method="POST">
+              @csrf
               <p class="form-title">Daftar</p>
               <div class="input-container">
-                <input placeholder="Masukkan Nama" type="name" id="name"/>
+                <input placeholder="Masukkan Nama" type="name" id="name" name="name"/>
               </div>
               <div class="input-container">
-                <input placeholder="Masukkan Email" type="email" id="email"/>
+                <input placeholder="Masukkan Email" type="email" id="email"name="email"/>
               </div>
               <div class="input-container">
-                <input placeholder="Masukkan Kata Sandi" type="password" id="password"/>
+                <input placeholder="Masukkan Kata Sandi" type="password" id="password" name="password"/>
               </div>
               <div class="input-container">
-                <input placeholder="Konfirmasi Kata Sandi" type="password" id="password"/>
+                <input placeholder="Konfirmasi Kata Sandi" type="password" id="password-confirmation" name="confirm-password"/>
               </div>
               <button class="submit" type="submit">Daftar</button>
 

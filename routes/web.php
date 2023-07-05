@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,3 +32,8 @@ Route::get('/signup', function(){
 Route::get('/admin', function(){
     return view('admin.index', ['name' => 'Trisna Wahyudi']);
 });
+
+// login register backend
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout']);
