@@ -1,0 +1,161 @@
+:root{
+    /* Colour */
+    --black:#252525;
+    --blackDesc : #5C5C5C;
+    --blackHover:#404040;
+    --grey:#F6F7F9;
+    --bluePrimary:#FF9F23;
+    
+    /* Font size */
+    font-size: 10px;
+}
+
+main{
+    padding-bottom: 10rem;
+}
+
+input{
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.navbar{
+    background-color: #ffffff;
+}
+
+.spaceNav{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav .nav-item{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+/*Hero Section*/
+.hero{
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.Headline{
+    text-align: start;
+}
+.Headline span{
+    color: var(--bluePrimary);
+}
+.Headline p{
+    color:var(--blackDesc);
+    font-size: 1.8rem;
+}
+.Headline h1{
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.Headline button{
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: var(--bluePrimary);
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+}
+
+/*Why and Kamera*/
+.title h1, .textKamera h1, .titleFAQ h1{
+    font-weight: 700;
+    color: var(--bluePrimary);
+    font-size: 3.5rem;
+}
+.title p , .textKamera p, .titleFAQ p{
+    font-size: 1.8rem;
+}
+.logo{
+    width: fit-content;
+}
+.wrapCard{
+    width: 100%;
+    height:fit-content;
+}
+
+.card{
+    padding: 0 2rem;
+    border-radius: 2rem;
+}
+
+.descCard p{
+    font-size: 1.8rem;
+}
+
+/* Kamera */
+
+.containerCard{
+    display: flex;
+    align-items: center;
+    height: 35rem;
+    border-radius: 1rem;
+}
+
+.containerCard:hover{
+    cursor: pointer;
+    transition:1s;
+    background-color: #ffc587;
+}
+
+
+.priceCard{
+    color: #06a556;
+}
+.priceCard span{
+    color: var(--black);
+}
+
+
+/*Faq*/
+.Accordion button{
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+
+.accordion-body{
+    font-size: 1.5rem;
+}
+/* Media Screen */
+
+@media screen and (max-width:992px) {
+    .spaceNav{
+        text-align: center;
+        display: block;
+    }
+    
+    .Headline,.btnHero{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+}
+
+
+@media screen and (max-width:576px) {
+    /* Hero Section*/
+
+    .Headline p{
+        color:var(--blackDesc);
+        font-size: 1.5rem;
+    }
+    .Headline h1{
+        font-weight: 900;
+        font-size: 4rem;
+    }
+}
