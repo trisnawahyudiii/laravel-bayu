@@ -28,3 +28,7 @@ Route::get('/login', function(){
 Route::get('/signup', function(){
     return view('signup');
 });
+
+Route::get('/admin', function(){
+    return view('admin.index', ['name' => 'Trisna Wahyudi']);
+});
