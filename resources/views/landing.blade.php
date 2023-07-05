@@ -15,7 +15,7 @@
     />
 
     <!-- css-->
-    <link rel="stylesheet" href="hello.css" />
+    <link rel="stylesheet" href="{{asset('css/landing.css')}}" />
   </head>
   <body>
     <main>
@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-12 col-xl-6">
               <div class="imgHero">
-                <img width="100%" src="img/kameraLogo.avif" alt="" />
+                <img width="100%" src="{{asset('img/kameraLogo.png')}}" alt="" />
               </div>
             </div>
           </div>
@@ -541,7 +541,7 @@
                   </div>
                 </div>
               </div>
-              
+
           </div>
         </div>
       </section>

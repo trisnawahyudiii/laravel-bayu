@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }

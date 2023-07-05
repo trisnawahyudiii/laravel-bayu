@@ -14,13 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
 
-Route::get('/hello', function(){ 
-    return view('hello');
-});
-
-Route::get('/trisna', function(){ 
-    return view('trisna');
+Route::get('/info', function(){
+    return view('info');
 });
