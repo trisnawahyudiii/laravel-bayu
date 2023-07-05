@@ -41,7 +41,7 @@
 
               <p class="signup-link">
                 Sudah Punya Akun?
-                <a href="login.blade.php">Masuk</a>
+                <a href="/login">Masuk</a>
               </p>
             </form>
           </div>

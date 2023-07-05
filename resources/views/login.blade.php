@@ -35,7 +35,7 @@
 
               <p class="signup-link">
                 Belum Punya Akun?
-                <a href="signup.blade.php">Daftar</a>
+                <a href="/signup">Daftar</a>
               </p>
             </form>
           </div>
