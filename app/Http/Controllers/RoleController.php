@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\item;
+use App\Models\Role;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreitemRequest;
-use App\Http\Requests\UpdateitemRequest;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreRoleRequest;
+use App\Http\Requests\UpdateRoleRequest;
 
-class ItemController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index()
     {
         //
     }
@@ -29,7 +28,7 @@ class ItemController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreitemRequest $request)
+    public function store(StoreRoleRequest $request)
     {
         //
     }
@@ -37,7 +36,7 @@ class ItemController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(item $item)
+    public function show(Role $role)
     {
         //
     }
@@ -45,7 +44,7 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(item $item)
+    public function edit(Role $role)
     {
         //
     }
@@ -53,7 +52,7 @@ class ItemController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateitemRequest $request, item $item)
+    public function update(UpdateRoleRequest $request, Role $role)
     {
         //
     }
@@ -61,7 +60,7 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(item $item)
+    public function destroy(Role $role)
     {
         //
     }
